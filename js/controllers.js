@@ -3,15 +3,16 @@ angular.module('starter.controllers', [])
     .controller('BlackboardCtrl', function ($scope) {
     })
 
-    .controller('ChatsCtrl', function ($scope, Chats) {
-        $scope.chats = Chats.all();
-        $scope.remove = function (chat) {
-            Chats.remove(chat);
+    .controller('BookListCtrl', function ($scope, BookListService) {
+        $scope.bookList = BookListService.all();
+
+        $scope.remove = function (book) {
+            BookListService.remove(book);
         }
     })
 
-    .controller('ChatDetailCtrl', function ($scope, $stateParams, Chats) {
-        $scope.chat = Chats.get($stateParams.chatId);
+    .controller('BookDetailCtrl', function ($scope, $stateParams, BookListService) {
+        $scope.book = BookListService.get($stateParams.bookId);
     })
 
     .controller('AccountCtrl', function ($scope) {
