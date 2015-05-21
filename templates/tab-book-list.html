@@ -1,0 +1,19 @@
+<ion-view view-title="Chats">
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="book in bookList"
+                      type="item-text-wrap" href="#/tab/booklist/{{book.id}}">
+                <img ng-src="{{book.face}}">
+
+                <h2>{{book.name}}</h2>
+
+                <p>{{book.lastText}}</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+
+                <ion-option-button class="button-assertive" ng-click="remove(book)">
+                    Delete
+                </ion-option-button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

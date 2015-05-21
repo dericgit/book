@@ -42,28 +42,28 @@ BookApp.config(function ($stateProvider, $urlRouterProvider) {
         .state('tab.blackboard', {
             url: '/blackboard',
             views: {
-                'tab-dash': {
+                'tab-blackboard': {
                     templateUrl: 'templates/tab-blackboard.html',
                     controller: 'BlackboardCtrl'
                 }
             }
         })
 
-        .state('tab.chats', {
-            url: '/chats',
+        .state('tab.booklist', {
+            url: '/booklist',
             views: {
-                'tab-chats': {
-                    templateUrl: 'templates/tab-chats.html',
-                    controller: 'ChatsCtrl'
+                'tab-booklist': {
+                    templateUrl: 'templates/tab-book-list.html',
+                    controller: 'BookListCtrl'
                 }
             }
         })
-        .state('tab.chat-detail', {
-            url: '/chats/:chatId',
+        .state('tab.book-detail', {
+            url: '/booklist/:bookId',
             views: {
                 'tab-chats': {
-                    templateUrl: 'templates/chat-detail.html',
-                    controller: 'ChatDetailCtrl'
+                    templateUrl: 'templates/book-detail.html',
+                    controller: 'BookDetailCtrl'
                 }
             }
         })
