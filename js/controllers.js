@@ -12,6 +12,7 @@ angular.module('starter.controllers', [])
     })
 
     .controller('BookDetailCtrl', function ($scope, $stateParams, BookListService) {
+        console.log("param is: ", $stateParams);
         $scope.book = BookListService.get($stateParams.bookId);
     })
 
