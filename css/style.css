@@ -3,3 +3,7 @@
     height: 200px;
     background:#ccc;
 }
+
+.book-container {
+    text-indent: 24px;
+}

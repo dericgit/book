@@ -61,7 +61,7 @@ BookApp.config(function ($stateProvider, $urlRouterProvider) {
         .state('tab.book-detail', {
             url: '/booklist/:bookId',
             views: {
-                'tab-chats': {
+                'tab-booklist': {
                     templateUrl: 'templates/book-detail.html',
                     controller: 'BookDetailCtrl'
                 }
